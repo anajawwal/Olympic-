@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة حفظ الكرة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameArea" class="game-area">
+        <div id="paddle" class="paddle"></div>
+        <div id="ball" class="ball"></div>
+        <div id="scoreBoard" class="score-board">النقاط: 0</div>
+        <div id="gameOver" class="game-over">
+            <div id="finalScore" class="final-score">نقاطك : 0</div>
+            <button onclick="restartGame()" class="restart-button">جرب كمان مرة</button>
+            <button onclick="goToHomePage()" class="home-button">ارجع للصفحة الرئيسية</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
