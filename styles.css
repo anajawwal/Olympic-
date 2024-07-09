@@ -7,7 +7,7 @@
 
 body {
     background-image: url('back.png');
-    background-color: #7ED957; /* لون الخلفية الأصلي المطلوب */
+    background-color: #7ED957; 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,7 +16,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Neo Sans Arabic', Arial, sans-serif; /* استخدام Neo Sans Arabic كخط أساسي */
+    font-family: 'Neo Sans Arabic', Arial, sans-serif; 
+    overflow: hidden; 
+
 }
 
 .game-area {
