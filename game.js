@@ -18,10 +18,10 @@ let score = 0;
 let isGameOver = false;
 let intervalId;
 
-let hitSound = new Audio('hit-sound.mp3');
+let hitSound = new Audio('hit-sound.wav');
 let gameOverSound = new Audio('game-over-sound.mp3');
 
-gameArea.addEventListener("touchmove", movePaddleTouch);
+document.addEventListener("touchmove", movePaddleTouch);
 
 function movePaddleTouch(event) {
     if (isGameOver) return;
@@ -81,7 +81,7 @@ function gameOver() {
     isGameOver = true;
     clearInterval(intervalId);
     gameOverSound.play();
-    finalScore.textContent = "نقاطك: " +"("+ score+")";
+    finalScore.textContent = "نقاطك: " + score;
 
     // رسالة حسب عدد النقاط
     if (score < 20) {
@@ -118,6 +118,7 @@ function startGame() {
     gameOverScreen.style.display = "none";
     intervalId = setInterval(moveBall, 10);
 }
-
-// بدء اللعبة عند تحميل الصفحة لأول مرة
+function goToHomePage() {
+    location.href = "index.html"; // تغيير "index.html" إلى الصفحة الرئيسية الصحيحة
+}
 startGame();

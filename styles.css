@@ -7,7 +7,7 @@
 
 body {
     background-image: url('back.png');
-    background-color: #7ED957; 
+    background-color: #7ED957; /* لون الخلفية الأصلي المطلوب */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,8 +16,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Neo Sans Arabic', Arial, sans-serif; 
-    overflow: hidden; 
+    font-family: 'Neo Sans Arabic', Arial, sans-serif; /* استخدام Neo Sans Arabic كخط أساسي */
+    overflow: hidden; /* تعطيل التمرير */
 
 }
 
@@ -28,6 +28,43 @@ body {
     background-color: #2196F3;
     border-radius: 10px; /* جعل حواف اللوح مستديرة */
     overflow: hidden;
+}
+
+.footer {
+    background-color: #28D789; /* لون الخلفية */
+    color: #fff;
+    padding: 0.5em; /* تصغير حجم الفوتر */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed; /* تثبيت الفوتر */
+    bottom: 0;
+    left: 0;
+}
+
+.footer-title {
+    font-size: 1em; /* تصغير حجم الخط */
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: black;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    font-size: 1em; /* تصغير حجم الأيقونات */
+    margin-left: 12px;
+    text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+    color: #ddd;
 }
 
 .home-button,
